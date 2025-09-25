@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Flood Alert System</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet (map) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Chart.js (forecast) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🌊 AI Flood Alert System</h1>
+    <nav>
+      <a href="#alerts">Alerts</a>
+      <a href="#forecast">Forecast</a>
+      <a href="#safety">Safety</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Stay Safe with AI Predictions</h2>
+    <p>Get real-time flood alerts powered by Artificial Intelligence.</p>
+    <input id="searchInput" type="text" placeholder="Search location...">
+  </section>
+
+  <section id="mapSection">
+    <h2>Flood Map</h2>
+    <div id="map"></div>
+  </section>
+
+  <section id="alerts">
+    <h2>Recent Alerts</h2>
+    <div id="alertContainer"></div>
+  </section>
+
+  <section id="forecast">
+    <h2>7-Day Rainfall Forecast</h2>
+    <canvas id="rainChart"></canvas>
+  </section>
+
+  <section id="safety">
+    <h2>Safety Tips</h2>
+    <ul>
+      <li>Move to higher ground if water is rising.</li>
+      <li>Avoid driving through flooded roads.</li>
+      <li>Prepare an emergency kit with essentials.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 AI Flood Alert | Built with HTML, CSS & JS</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

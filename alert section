@@ -1,0 +1,5 @@
+<section id="alerts">
+  <h2>Recent Alerts</h2>
+  <input type="text" id="searchInput" placeholder="Search by location...">
+  <div id="alertContainer"></div>
+</section>

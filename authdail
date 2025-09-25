@@ -1,0 +1,26 @@
+import { useState } from "react";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "./ui/dialog";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { AlertCircle, CheckCircle, Eye, EyeOff, Mail, Lock, User, Phone } from "lucide-react";
+import { Alert, AlertDescription } from "./ui/alert";
+
+interface AuthDialogProps {
+  isOpen: boolean;
+  onClose: () => void;
+  initialTab?: 'login' | 'signup';
+  onAuthSuccess?: (user: { email: string; name: string; role: string }) => void;
+}
+
+interface FormData {
+  email: string;
+  password: string;
+  confirmPassword?: string;
+  name?: string;
+  phone?: string;
+  organization?: string;
+  role?: string;
+}
